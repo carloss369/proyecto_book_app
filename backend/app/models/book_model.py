@@ -1,0 +1,59 @@
+from database import db
+
+class Book(db.Model):
+    __tablename__="Libros"
+
+    id=db.Column(db.Integer, primary_key=True)
+    title=db.Column(db.String(50), nullable=False)
+    price=db.Column(db.Float, nullable=False)
+    author=db.Column(db.String(50), nullable=False)
+    editorial=db.Column(db.String(100), nullable=False)
+    number_pages=db.Column(db.Integer,nullable=False)
+    bookbinding=db.Column(db.String(50), nullable=False)
+    copies=db.Column(db.Integer,nullable=False)
+    description=db.Column(db.String(200), nullable=False)
+
+
+    def __init__(self,title,price,author,editorial,number_pages,bookbinding,description,copies):
+        self.title=title
+        self.price=price
+        self.author=author
+        self.editorial=editorial
+        self.number_pages=number_pages
+        self.bookbinding=bookbinding
+        self.copies=copies
+        self.description=description
+
+    def save(self):
+        db.session.add(self)
+        db.session.commit()
+
+    @staticmethod
+    def get_all():
+        return Book.query.all()
+    
+    @staticmethod
+    def get_by_id(id):
+        return Book.query.get(id)
+    
+    def update(self,title=None,price=None,author=None,editorial=None,number_pages=None,bookbinding=None,copies=None,description=None):
+        if title is not None:
+            self.title=title
+        if price is not None:
+            self.price=price
+        if author is not None:
+            self.author=author
+        if number_pages is not None:
+            self.number_pages=number_pages
+        if copies is not None:
+            self.copies=copies
+        if bookbinding is not None:
+            self.bookbinding=bookbinding
+        if description is not None:
+            self.description=description
+        db.session.commit()
+    
+
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()

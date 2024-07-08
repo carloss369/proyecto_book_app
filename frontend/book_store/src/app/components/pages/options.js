@@ -38,8 +38,8 @@ function Options(){
                             <i class="fas fa-search"></i>
                         </button>
                         <input className={style.in} placeholder="Busca un libro"></input>
-                        <button className={style.btn}> <i class="fas fa-user"></i></button>
-                        <button className={style.btn}> <i class="fas fa-shopping-cart"></i></button>
+                        <button className={style.btn}> <i className="fas fa-user"></i></button>
+                        <button className={style.btn}> <i className="fas fa-shopping-cart"></i></button>
                     </div>
                 </div>
             </div>

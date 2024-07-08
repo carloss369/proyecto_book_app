@@ -1,15 +1,15 @@
 import style from "./bestSeller.module.css"
 
-function BestSeller(){
+function LastIncome(){
 
 
     return(
     
     <div className={style.main}>
     
-            <h4>COMPRA AHORA</h4>
-            <h2>Mas Vendidos</h2>
+            <h4>NOVEDADES</h4>
+            <h2>Recien Ingresados</h2>
     
     </div>);
 
-}export default BestSeller;
+}export default LastIncome;

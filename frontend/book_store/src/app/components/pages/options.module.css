@@ -73,11 +73,24 @@
     position: absolute;
     cursor: pointer;
     padding: 0.6rem;
+    color: var(--gray);
+    background-color: var(--white);
+    border-radius: 0 0 5px 5px;
+    margin-top: 10px;
+    
+    width: 130px;
 
+}
+.category{
+    padding: 3.5rem;
+  
 }
 .category:hover .lista{
     display: block;
 }
 .lista li:hover{
     text-decoration: underline;
+}
+.lista li{
+    padding: 4px;
 }

@@ -32,10 +32,11 @@ def create_book():
     copies=data.get("copies")
     bookbinding=data.get("bookbinding")
     description=data.get("description")
+    cover=data.get("cover")
 
-    if not title or not price or not author or not editorial or not number_pages or not bookbinding or not description or not copies:
+    if not title or not price or not author or not editorial or not number_pages or not bookbinding or not description or not copies or not cover:
         return jsonify({"error":"Faltan datos requeridos"}),400
-    book=Book(title=title,price=price,author=author,editorial=editorial,number_pages=number_pages,bookbinding=bookbinding,copies=copies,description=description)
+    book=Book(title=title,price=price,author=author,editorial=editorial,number_pages=number_pages,bookbinding=bookbinding,copies=copies,description=description, cover=cover)
     book.save()
     return jsonify(render_book_detail(book)),201
 
@@ -56,8 +57,9 @@ def update_book(id):
     copies=data.get("copies")
     bookbinding=data.get("bookbinding")
     description=data.get("description")
+    cover=data.get("cover")
 
-    book.update(title=title,price=price,author=author,editorial=editorial,number_pages=number_pages,copies=copies,bookbinding=bookbinding,description=description)
+    book.update(title=title,price=price,author=author,editorial=editorial,number_pages=number_pages,copies=copies,bookbinding=bookbinding,description=description,cover=cover)
     return jsonify(render_book_detail(book))
 
 

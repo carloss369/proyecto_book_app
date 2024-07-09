@@ -11,7 +11,7 @@ import Footer from './components/pages/footer';
 import Info from './components/pages/info';
 
 export default function Home() {
-  
+ 
   return (
     <main className={styles.main}>
       <TopMenu></TopMenu>

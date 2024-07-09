@@ -424,6 +424,9 @@
                     },
                     "description":{
                         "type":"string"
+                    },
+                    "cover":{
+                        "type":"string"
                     }
                 },
                 "required":[
@@ -434,7 +437,8 @@
                     "number_pages",
                     "copies",
                     "bookbinding",
-                    "description"
+                    "description",
+                    "cover"
                 ]
             },
             "Order":{

@@ -35,7 +35,7 @@ function Options(){
                 <div className={style.right}>
                     <div className={style.input}>
                         <button className={style.btn}>
-                            <i class="fas fa-search"></i>
+                            <i className="fas fa-search"></i>
                         </button>
                         <input className={style.in} placeholder="Busca un libro"></input>
                         <button className={style.btn}> <i className="fas fa-user"></i></button>

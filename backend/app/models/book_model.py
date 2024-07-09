@@ -11,10 +11,11 @@ class Book(db.Model):
     number_pages=db.Column(db.Integer,nullable=False)
     bookbinding=db.Column(db.String(50), nullable=False)
     copies=db.Column(db.Integer,nullable=False)
-    description=db.Column(db.String(200), nullable=False)
+    description=db.Column(db.String(500), nullable=False)
+    cover=db.Column(db.String(100), nullable=False)
 
 
-    def __init__(self,title,price,author,editorial,number_pages,bookbinding,description,copies):
+    def __init__(self,title,price,author,editorial,number_pages,bookbinding,description,copies,cover):
         self.title=title
         self.price=price
         self.author=author
@@ -23,6 +24,7 @@ class Book(db.Model):
         self.bookbinding=bookbinding
         self.copies=copies
         self.description=description
+        self.cover=cover
 
     def save(self):
         db.session.add(self)
@@ -36,7 +38,7 @@ class Book(db.Model):
     def get_by_id(id):
         return Book.query.get(id)
     
-    def update(self,title=None,price=None,author=None,editorial=None,number_pages=None,bookbinding=None,copies=None,description=None):
+    def update(self,title=None,price=None,author=None,editorial=None,number_pages=None,bookbinding=None,copies=None,description=None, cover=None):
         if title is not None:
             self.title=title
         if price is not None:
@@ -51,6 +53,8 @@ class Book(db.Model):
             self.bookbinding=bookbinding
         if description is not None:
             self.description=description
+        if cover is not None:
+            self.cover=cover
         db.session.commit()
     
 

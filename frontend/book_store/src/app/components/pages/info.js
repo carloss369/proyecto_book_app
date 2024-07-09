@@ -14,9 +14,9 @@ function Info(){
                 </div>
                 <p>La Paz-Bolivia Ciudad Satelite calle 23 n 23</p>
                 <div className={style.social}>
-                    <a href="https://github.com/Iver011" target="_blank"><i class="fab fa-github"></i></a>
-                    <  i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
+                    <a href="https://github.com/Iver011" target="_blank"><i className="fab fa-github"></i></a>
+                    <  i className="fab fa-instagram"></i>
+                    <i className="fab fa-facebook"></i>
                 </div>
             </div>
             <div className={style.second}>
@@ -46,9 +46,9 @@ function Info(){
             <div className={style.fifth}>
                 <h2>INFORMACION ADICIONAL</h2>
                 <div className={style.card}>
-                <i class="fab fa-cc-visa icon visa-icon"></i>
-                <i class="fab fa-cc-mastercard icon mastercard-icon"></i>
-                <i class="fab fa-x-twitter icon x-icon"></i>
+                <i className="fab fa-cc-visa icon visa-icon"></i>
+                <i className="fab fa-cc-mastercard icon mastercard-icon"></i>
+                <i className="fab fa-x-twitter icon x-icon"></i>
                 </div>
                 
             </div>

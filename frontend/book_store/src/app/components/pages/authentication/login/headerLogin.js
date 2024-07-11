@@ -8,7 +8,7 @@ function HeaderLogin({title}){
             <div className={style.conteiner}>
                 <h1>{title}</h1>
                 <div className={style.link}>
-                <h3>Pagina Principal {">"} </h3><h2>{title}</h2>
+                <h3>Pagina Principal {">"}  </h3><h2>{title}</h2>
                 </div>
                 
             </div>

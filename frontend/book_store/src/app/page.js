@@ -11,6 +11,8 @@ import Footer from './components/pages/homepage/footer';
 import Info from './components/pages/homepage/info';
 import Login from './components/pages/authentication/login';
 
+import Register from './components/pages/authentication/register';
+
 
 
 
@@ -31,7 +33,8 @@ export default function Home() {
       */}
       <TopMenu></TopMenu>
       <Options></Options>
-      <Login></Login>
+      <Register></Register>
+      <Info></Info>
     </main>
   );
 }

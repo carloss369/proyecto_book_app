@@ -1,6 +1,6 @@
 .conteiner{
     width: 100%;
-    height: 650px;
+    height: 600px;
     
     
 }
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
 }
 .text{
     padding-bottom: 20px;
@@ -23,4 +23,10 @@
 
 .text:hover{
     text-decoration: underline;
+}
+
+.politicas{
+    width: 320px;
+    font-size: 12px;
+    padding-bottom: 20px;
 }

@@ -13,7 +13,7 @@ import Login from './components/pages/authentication/login';
 
 import Register from './components/pages/authentication/register';
 
-
+import Product from './components/pages/product/product';
 
 
 export default function Home() {
@@ -31,10 +31,8 @@ export default function Home() {
       <Footer></Footer>
       <Info></Info>
       */}
-      <TopMenu></TopMenu>
-      <Options></Options>
-      <Register></Register>
-      <Info></Info>
+      <Product></Product>
+      
     </main>
   );
 }
